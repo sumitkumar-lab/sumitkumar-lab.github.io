@@ -1,0 +1,33 @@
+---
+---
+@import "{{ site.theme }}";
+
+/* Custom Variables */
+$header-heading-color: #2c3e50;
+$section-headings-color: #34495e;
+$body-text-color: #333333;
+$body-link-color: #0366d6;
+
+/* You can write standard CSS here to customize anything */
+body {
+  background-color: #f8f9fa; /* A very light grey background */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+header {
+  background-color: #ffffff; /* Make the header stand out */
+  border-bottom: 2px solid #e1e4e8;
+}
+
+h1, h2, h3 {
+  color: $section-headings-color;
+}
+
+a {
+  color: $body-link-color;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
