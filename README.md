@@ -6,6 +6,7 @@ Welcome to my digital workspace. I am currently undertaking a 6-month intensive,
 * [CV / Resume](./CV.md)
 * [Publications](./publications.md)
 * [Daily Research Log](./research-log/)
+* [Learn the life-cycle of AI Engineering](./ai_engineering_log/)
 
 ## Current Focus
 * Building a 100M-1B parameter language model from scratch.
