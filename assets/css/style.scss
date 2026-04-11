@@ -11,6 +11,11 @@
   --link-color: #0366d6;
   --code-bg: #f6f8fa;
 }
+/* Force headers to inherit the dynamic dark mode text color */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-color);
+  transition: color 0.3s ease; /* Keeps the smooth fade effect */
+}
 
 /* Dark Mode Overrides */
 [data-theme="dark"] {
