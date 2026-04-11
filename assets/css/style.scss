@@ -1,28 +1,51 @@
+---
+---
+@import "{{ site.theme }}";
+
+/* --- 1. CSS VARIABLES (THEME COLORS) --- */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #333333;
+  --header-bg: #f8f9fa;
+  --header-border: #e1e4e8;
+  --link-color: #0366d6;
+  --code-bg: #f6f8fa;
+}
+
+/* Dark Mode Overrides */
+[data-theme="dark"] {
+  --bg-color: #121212;
+  --text-color: #e6e6e6;
+  --header-bg: #1e1e1e;
+  --header-border: #333;
+  --link-color: #58a6ff;
+  --code-bg: #1f2428;
+}
+
+/* Apply variables to the body */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
 /* --- 2. HEADER STYLING --- */
 .site-header {
-  /* The background and border span the full width of the screen */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
   background-color: var(--header-bg);
   border-bottom: 1px solid var(--header-border);
   position: sticky;
   top: 0;
   z-index: 1000;
-  width: 100%;
-}
-
-.header-wrapper {
-  /* The inner content stays centered and constrained */
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 860px; /* Matches the minimal theme's standard width */
-  margin: 0 auto;   /* Centers the wrapper horizontally */
-  padding: 15px 20px;
 }
 
 .header-left, .header-right {
   display: flex;
   align-items: center;
-  gap: 20px; 
+  gap: 20px; /* Space between links */
 }
 
 .site-header a {
@@ -42,4 +65,17 @@
   font-size: 20px;
   cursor: pointer;
   padding: 0;
+}
+
+/* --- 3. FIXING MINIMAL THEME DEFAULTS --- */
+.wrapper {
+  margin-top: 40px; /* Give content breathing room below header */
+}
+
+a {
+  color: var(--link-color);
+}
+
+code, pre {
+  background-color: var(--code-bg);
 }
