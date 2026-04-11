@@ -9,21 +9,20 @@
   <body>
 
     <header class="site-header">
-      <div class="header-left">
-        <a href="https://github.com/sumitkumar-lab" target="_blank" class="social-link">GitHub</a>
-        <a href="https://linkedin.com/in/sumitkumar-airesearcher" target="_blank" class="social-link">LinkedIn</a>
-        <a href="https://x.com/the_realkumar" target="_blank" class="social-link">X</a>
-      </div>
-      
-      <div class="header-right">
-        <a href="{{ '/' | relative_url }}">About</a>
-        <a href="{{ '/publications.html' | relative_url }}">Publications</a>
-        <a href="{{ '/index.html' | relative_url }}">Blog</a>
-        <a href="{{ '/CV.html' | relative_url }}">CV</a>
+      <div class="header-wrapper">
+        <div class="header-left">
+          <a href="https://github.com/sumitkumar-lab" target="_blank" class="social-link">GitHub</a>
+          <a href="https://linkedin.com/in/sumitkumar-airesearcher" target="_blank" class="social-link">LinkedIn</a>
+          <a href="https://x.com/the_realkumar" target="_blank" class="social-link">X</a>
+        </div>
         
-        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode">
-          🌓
-        </button>
+        <div class="header-right">
+          <a href="{{ '/' | relative_url }}">About</a>
+          <a href="{{ '/publications.html' | relative_url }}">Publications</a>
+          <a href="{{ '/index.html' | relative_url }}">Blog</a>
+          <a href="{{ '/CV.html' | relative_url }}">CV</a>
+          <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode">🌓</button>
+        </div>
       </div>
     </header>
 
