@@ -14,12 +14,12 @@
 
 /* Dark Mode Overrides */
 [data-theme="dark"] {
-  --bg-color: #121212;
+  --bg-color: #000000;
   --text-color: #e6e6e6;
-  --header-bg: #ffffff;
-  --header-border: #ffffff;
+  --header-bg: #000000;
+  --header-border: #000000;
   --link-color: #fffb00;
-  --code-bg: #fdfdfd;
+  --code-bg: #000000;
 }
 
 /* Apply variables to the body */
